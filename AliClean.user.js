@@ -10,7 +10,8 @@
 // @homepageURL https://github.com/Duckle29/AliClean
 // @downloadURL https://raw.githubusercontent.com/Duckle29/AliClean/master/AliClean.user.js
 // @updateURL   https://raw.githubusercontent.com/Duckle29/AliClean/master/AliClean.user.js
-// @version     1.2
+// @version     1.3
+// @history     1.3 Changed to group based regex
 // @history     1.2 Removed @connect metadata, as they're not necessary for updates (I think)
 // @history     1.1 Fixed @include directive and double slash in URL
 // ==/UserScript==
