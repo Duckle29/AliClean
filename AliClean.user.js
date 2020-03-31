@@ -17,8 +17,10 @@
 
 (function() {
     'use strict';
-
-    var p1 = document.URL.match(/^https?:\/\/(www\.)?aliexpress.com\/(?:item|store\/product)/g);
-    var p2 = document.URL.match(/\/[0-9_]+[.]html(?=$|[?])/g);
-    if (p1 && p2 && p1+p2 != document.URL) history.replaceState(null, '', p1+p2);
+    var groups = document.URL.match(/^(https?:\/\/(?:www\.)?aliexpress.com\/(?:item|store\/product))(\/[0-9_]+[.]html(?=$|[?]))/)
+    
+    if (groups.length === 3 && groups[1]+groups[2] != document.URL)
+    {
+      history.replaceState(null, '', groups[1]+groups[2]);
+    }
 })();
