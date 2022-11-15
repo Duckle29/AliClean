@@ -1,4 +1,5 @@
 # AliClean
+## Check out [UrlClean](https://github.com/Duckle29/url_clean). Works for multiple sites
 A userscript to clean up Aliexpress URLs
 
 The script was initially made by a user in #reprap on freenode IRC, but I sadly have forgotten by who :(
